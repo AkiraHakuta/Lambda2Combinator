@@ -85,6 +85,10 @@ int main(int argc, const char *args[])
     string result_str;
     string filename = args[1];
     ifs.open(filename);
+    if (ifs.fail()){
+        cout  << "cannot open " << args[1] << endl;
+        exit(1);
+    }
     string data,buf;
     while (!ifs.eof()){
         getline(ifs, buf);
