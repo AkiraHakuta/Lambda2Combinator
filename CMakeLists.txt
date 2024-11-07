@@ -25,4 +25,4 @@ include_directories(${ANTLR_lambda2cGrammar_OUTPUT_DIR})
 
 add_executable(lambda2c lambda2c.cpp eval.cpp ${ANTLR_lambda2cGrammar_CXX_OUTPUTS})
 target_link_libraries(lambda2c antlr4_static)
-target_link_libraries(lambda2c -static -lstdc++ -lgcc -lwinpthread)
+# target_link_libraries(lambda2c -static -lstdc++ -lgcc -lwinpthread)
