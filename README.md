@@ -226,7 +226,7 @@ NL;putStr("//addtion (pattern matching)");
 ```  
 lambda2c.exe test2.txt > header.h
 ```
-For how to use header.h, see [SKIBC](https://github.com/AkiraHakuta/SKIBC/releases)
+For how to use header.h, see [SKIBC](https://github.com/AkiraHakuta/SKIBC)
 
 ### Building (Windows only)   
 <ol>
