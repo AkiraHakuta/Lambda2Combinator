@@ -1,0 +1,34 @@
+/* test1.txt (Scott encoding) */  
+
+putStr("//Scott encoding");
+
+NL;putStr("//Booleans");
+[tru] = \x.\y.x;
+[fls] = \x.\y.y;
+
+NL;putStr("//Numbers");
+[0] =  \z.\y.z;
+[succ] = \n.\x.\f.(fn);
+[1] = [succ][0];
+[2] = [succ][1];
+[3] = [succ][2];
+[iszero] = \n.(n[tru](\x.[fls]));
+[pred] = \n.(n[0](\x.x));
+
+NL;putStr("//addtion (pattern matching)");
+
+/*
+    Scott encoding pattern matching
+
+    \n.(nmg)  n and m are Scott Numbers, g is function
+
+    nmg          = ?
+    [0]mg        = (\z.\y.z)mg = (\y.m)g = m
+    ([succ]n')mg = (\x.\.f(fn'))mg = (\.f(fn'))g = gn'
+  
+    N       ->  (\n.(nmg))N
+   [0]      ->  m
+   [succ]n' ->  gn'
+*/
+
+[add] := \n.\m.(nm(\t.[succ]([add]tm)));
