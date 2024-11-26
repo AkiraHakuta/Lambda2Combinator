@@ -20,7 +20,7 @@ NL;putStr("//addtion (pattern matching)");
 /*
     Scott encoding pattern matching
 
-    \n.(nmg)  n and m are Scott Numbers, g is function
+    \n.(nmg)  n is Scott Number, g is function
 
     nmg          = ?
     [0]mg        = (\z.\y.z)mg = (\y.m)g = m

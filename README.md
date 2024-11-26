@@ -109,7 +109,7 @@ NL;putStr("//addtion (pattern matching)");
 /*
     Scott encoding pattern matching
 
-    \n.(nmg)  n and m are Scott Numbers, g is function
+    \n.(nmg)  n is Scott Number, g is function
 
     nmg          = ?
     [0]mg        = (\z.\y.z)mg = (\y.m)g = m
@@ -226,7 +226,7 @@ NL;putStr("//addtion (pattern matching)");
 ```  
 lambda2c.exe test2.txt > header.h
 ```
-For how to use header.h, see [SKIBC](https://github.com/AkiraHakuta/SKIBC)
+For how to use header.h, see [SKIBC](https://github.com/AkiraHakuta/SKIBC/releases)
 
 ### Building (Windows only)   
 <ol>
