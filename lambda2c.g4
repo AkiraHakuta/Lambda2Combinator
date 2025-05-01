@@ -61,4 +61,4 @@ SBID : '[' [a-zA-Z0-9_']+ ']';
 StringLiteral : '"' (~["\\\r\n_])* '"';
 WS : [ \t\n\r]+                             -> skip;
 COMMENT : '/*' .*? '*/'                     -> skip;
-SL_COMMENT :  '//' .*? ('\n'|'<EOF>')       -> skip;
+SL_COMMENT :  '//' .*? ('\n'|EOF)           -> skip;
